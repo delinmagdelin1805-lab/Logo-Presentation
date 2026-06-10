@@ -1,0 +1,294 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+
+    background:#0f172a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    font-family:'Poppins', sans-serif;
+
+    color:white;
+}
+
+/* Main Section */
+
+.presentation{
+    width:100%;
+
+    max-width:1300px;
+}
+
+/* Header */
+
+.header{
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+/* Tag */
+
+.tag{
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border:
+        1px solid rgba(255,255,255,0.1);
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+}
+
+/* Heading */
+
+.header h1{
+    font-size:68px;
+
+    margin-bottom:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #60a5fa,
+            #a78bfa
+        );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+/* Paragraph */
+
+.header p{
+    font-size:22px;
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+}
+
+/* Grid */
+
+.logo-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+}
+
+/* Card */
+
+.card{
+    background:
+        rgba(255,255,255,0.06);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    backdrop-filter:blur(12px);
+
+    transition:0.4s;
+}
+
+/* Main Card */
+
+.main-card{
+    grid-column:span 2;
+}
+
+/* Hover */
+
+.card:hover{
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(96,165,250,0.2);
+}
+
+/* Titles */
+
+.card h2{
+    font-size:28px;
+
+    margin-bottom:30px;
+}
+
+/* Main Logo */
+
+.main-logo{
+    width:180px;
+    height:180px;
+
+    margin:auto auto 30px;
+
+    border-radius:40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:80px;
+
+    font-weight:800;
+}
+
+/* Small Logos */
+
+.logo{
+    width:130px;
+    height:130px;
+
+    margin:auto auto 30px;
+
+    border-radius:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:60px;
+
+    font-weight:800;
+}
+
+/* Dark Logo */
+
+.dark-logo{
+    background:white;
+
+    color:#111827;
+}
+
+/* Light Logo */
+
+.light-logo{
+    background:#111827;
+
+    border:2px solid white;
+}
+
+/* Colors */
+
+.colors{
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-bottom:30px;
+}
+
+/* Color Circle */
+
+.colors span{
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+}
+
+/* Colors */
+
+.blue{
+    background:#2563eb;
+}
+
+.purple{
+    background:#7c3aed;
+}
+
+.pink{
+    background:#ec4899;
+}
+
+/* Paragraph */
+
+.card p{
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .main-card{
+        grid-column:span 1;
+    }
+
+    .header h1{
+        font-size:50px;
+    }
+
+    .header p{
+        font-size:18px;
+    }
+}
+
+@media(max-width:500px){
+
+    .header h1{
+        font-size:38px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .main-logo{
+        width:140px;
+        height:140px;
+
+        font-size:60px;
+    }
+}
